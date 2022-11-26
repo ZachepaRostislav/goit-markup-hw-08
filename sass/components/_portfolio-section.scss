@@ -6,6 +6,9 @@
 
 .portfolio-section {
   @extend %section;
+  @media screen and (min-width:$desktop) {
+      padding: 94px 0;
+    }
 }
 
 .portfolio-section__title {

@@ -1,15 +1,36 @@
 .footer-section {
   background-color: #2F303A;
-  padding: 60px 0;
+  @extend %section;
+  text-align: center;
+ 
+  @media screen and (min-width:$desktop) {
+      padding: 94px 0;
+    }
+
 }
 
 .footer-section__container {
-  display: flex;
-  align-items: baseline;
+
+  @media screen and (min-width:$tablet) {
+    display: flex;
+    flex-wrap:wrap;
+    justify-content: space-around;
+    
+  }
+  @media screen and (min-width:$desktop) {
+    display: flex;
+    align-items: baseline;
+  }
+  
 }
 
 .footer-section__contact {
-  width: 231px
+  margin-bottom: 60px;
+  @media screen and (min-width:$desktop) {
+    width: 231px;
+    margin-bottom: 60px;    
+  }
+  
 }
 
 .footer-section__logo {
@@ -48,7 +69,15 @@
 }
 
 .footer-section__social {
-  margin-left: 70px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 60px;
+    @media screen and (min-width:$desktop) {
+        margin-left: 70px;
+        margin-bottom: 0;
+      }
+  
 }
 
 .footer-section__title {
@@ -93,8 +122,12 @@
 
 
 .footer-section__form {
-    margin-left: 93px;
-    width: 570px;
+
+  @media screen and (min-width:$desktop) {
+      margin-left: 93px;
+      width: 570px;
+    }
+    
 }
 
 .footer-section__subscription {
@@ -107,16 +140,25 @@
     color: map-get($colors, 'white-text-color');
 }
 
-.footer-section__field {
-    display: flex;
-    align-items: center;
+.footer-section__field {    
     position: relative;
+
+    @media screen and (min-width:$tablet) {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    @media screen and (min-width:$desktop) {
+      display: flex;
+      align-items: center;
+    }
 }
 
 .footer-section__email {
   display: inline-block;
-    width: 358px;
+    width: 450px;
     padding: 14px 0 14px 16px;
+    margin-bottom: 20px;
     margin-right: 12px;
     border: none;
     outline: 1px solid rgba(255, 255, 255, 0.3);
@@ -129,7 +171,10 @@
     cursor: pointer;
     background-color: transparent;
     color: rgba(255, 255, 255, 0.6);
-
+  @media screen and (min-width:$desktop) {
+    width: 358px;
+    margin-bottom: 0;
+  }
     &:hover,
     &:focus {
         outline: 1px solid map-get($colors, 'accent-color');

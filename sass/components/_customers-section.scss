@@ -1,26 +1,43 @@
 .customers-section {
   @extend %section;
+  @media screen and (min-width:$desktop) {
+      padding: 94px 0;
+    }
 }
 
 .customers-section__title {
   @extend %title;
+  font-size: 28px;
 }
 
 .customers-section__list {
-  // display: flex;  
-  // flex-wrap: wrap;
+  display: flex;  
+  flex-wrap: wrap;
+  @media screen and (min-width:$desktop) {
+      flex-wrap: nowrap;
+    }
 }
 
 .customers-section__item {
-  display: flex;
-  flex-basis: calc((100% - 150px) / 5);
+  width: 210px;
+  height: 92px;
+  
+  flex-basis: calc((100% - 60px) / 2);
+  margin:0 15px 30px;
+  @media screen and (min-width:$tablet) {
+    flex-basis: calc((100% - 90px) / 3);      
+  }
+  @media screen and (min-width:$desktop) {
+    flex-basis: calc((100% - 150px) / 5);
+      &:not(:first-child) {
+        margin-left: 30px;
+      }
+  }
 }
-.customers-section__item:not(:first-child) {
-  margin-left: 30px;
-}
+
 .customers-section__link {
-    display: flex;
-    padding: 14px 31px;
+    display: flex;        
+    padding: 15px 43px;
     border: 1px solid map-get($colors, 'bg-color-social-icon' );
     border-radius: 4px;
     transition: border-color 250ms $time-function;
@@ -29,7 +46,11 @@
         border-color: map-get($colors,'accent-color');
        
   }
-    
+
+    @media screen and (min-width:$desktop) {
+      padding: 14px 31px;
+    }
+        
 }
 
 .customers-section__icon {

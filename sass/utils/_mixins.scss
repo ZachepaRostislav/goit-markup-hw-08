@@ -1,0 +1,10 @@
+@mixin centeredFlex($type:flex) {
+    display: $type;
+    align-items: center;
+    justify-content: center;
+}
+@mixin startFlex($type:flex,$direction:column) {
+    display: $type;
+    flex-direction: $direction;
+    align-items: flex-start;    
+}

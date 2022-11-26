@@ -1,0 +1,82 @@
+.team-section {
+  background-color: #f5f4fa;
+  text-align: center;
+  @extend %section;
+}
+
+.team-section__title {
+  @extend %title;
+}
+
+.team-section__list {
+  // display: flex;
+  // flex-wrap: wrap;
+}
+
+.team-section__item {
+     flex-basis: calc((100% - 90px) / 4);
+    background-color: map-get($colors,'main-bg-color') ;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+      0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+}
+
+.team-section__item:not(:first-child) {
+  margin-left: 30px;
+}
+
+.team-section__img {
+  height: 260px;
+  @extend %img
+}
+
+.team-section__caption {
+    margin: 30px 0 10px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+    color: map-get($colors,'black-color');
+}
+
+.team-section__position {
+    margin-bottom: 16px;
+    font-size: 16px;
+    letter-spacing: 0.03em;
+    color: inherit;
+}
+
+.team-section__block {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 30px;  
+}
+
+.team-section__wrapper:not(:first-child){
+  margin-left: 10px;
+}
+
+.team-section__social {
+    @include centeredFlex();
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    transition: background-color 250ms $time-function;
+    &:hover,
+    &:focus {
+        background-color: map-get($colors,'accent-color');
+    }    
+}
+
+.team-section__icon {
+    width: 20px;
+    height: 20px;
+    fill: map-get($colors,'bg-color-social-icon');
+    transition: fill 250ms $time-function;
+    .team-section__social:hover & {
+        fill: map-get($colors, 'white-text-color');
+      }
+    .team-section__social:focus & {
+      fill: map-get($colors, 'white-text-color');
+    }
+}

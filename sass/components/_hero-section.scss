@@ -1,0 +1,46 @@
+ .hero-section {
+   background-color: map-get($colors, 'hero-bg-color' );
+   max-width: 1600px;
+   height: 600px;
+   padding: 195px 0;
+   margin: 0 auto;
+   text-align: center;
+   background-image: linear-gradient(to right,
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)),url(../images/hero.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+   
+ }
+
+ .hero-section__title {
+   margin-bottom: 30px;
+   font-weight: 900;
+   font-size: 44px;
+   line-height: 1.36;
+   letter-spacing: 0.06em;
+   text-transform: uppercase;
+   color: map-get($colors, 'white-text-color' );
+ }
+
+ .hero-section__button {
+     padding: 10px 32px;
+     font-family: inherit;
+     font-weight: $font-weight-bold;
+     font-size: 16px;
+     line-height: 1.88;
+     letter-spacing: 0.06em;
+     color: map-get($colors, 'white-text-color');
+     background-color: map-get($colors, 'accent-color' );
+     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+     border-radius: 4px;
+     border: none;
+     cursor: pointer;
+     transition: background-color 250ms $time-function;
+
+     &:hover,
+     &:focus {
+       background-color: #188ce8;
+     }
+ }

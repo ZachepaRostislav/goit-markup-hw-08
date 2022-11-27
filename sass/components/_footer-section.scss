@@ -150,12 +150,13 @@
     }
     @media screen and (min-width:$desktop) {
       display: flex;
+      flex-direction: row;
       align-items: center;
     }
 }
 
 .footer-section__email {
-  display: inline-block;
+    display: inline-block;
     width: 450px;
     padding: 14px 0 14px 16px;
     margin-bottom: 20px;
@@ -187,11 +188,20 @@
     left: 16px;
     transition: left 250ms $time-function;
 
-    .footer-section__email:focus + &,
-    .footer-section__email:not(:placeholder-shown) + & {
-      left: -52px;
-        color: map-get($colors,'white-text-color');
+    .footer-section__email:focus+&,
+    .footer-section__email:not(:placeholder-shown)+& {
+      left: 85%;
+      color: map-get($colors, 'white-text-color');
     }
+    @media screen and (min-width:$tablet) {
+      .footer-section__email:focus+&,
+        .footer-section__email:not(:placeholder-shown)+& {
+          left: -52px;
+          color: map-get($colors, 'white-text-color');
+        }
+    }
+
+    
 }
 
 .footer-section__button {

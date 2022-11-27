@@ -1,7 +1,7 @@
-@mixin centeredFlex($type:flex) {
+@mixin centeredFlex($type:flex,$ai:center,$jc:center) {
     display: $type;
-    align-items: center;
-    justify-content: center;
+    align-items: $ai;
+    justify-content: $jc;
 }
 @mixin startFlex($type:flex,$direction:column) {
     display: $type;

@@ -3,8 +3,8 @@
     align-items: $ai;
     justify-content: $jc;
 }
-@mixin startFlex($type:flex,$direction:column) {
+@mixin startFlex($type:flex,$direction:column,$ai:flex-start) {
     display: $type;
     flex-direction: $direction;
-    align-items: flex-start;    
+    align-items: $ai;    
 }

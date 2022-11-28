@@ -84,7 +84,7 @@
     
   }
   @media screen and (min-width:$desktop) {
-    @include startFlex($direction:row)
+    @include startFlex($direction:row,$ai:baseline)
     // display: flex;
     // flex-direction: row;
     // align-items:flex-start;    

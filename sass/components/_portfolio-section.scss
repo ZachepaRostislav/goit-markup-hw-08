@@ -22,7 +22,7 @@
     @media screen and (min-width:$tablet) {
       flex-wrap: nowrap;
       margin-bottom: 30px;
-      @include centeredFlex($ai:center,$jc: center);
+      @include centeredFlex();
       }
 }
 
@@ -68,7 +68,8 @@
   @media screen and (min-width:$tablet) {
       display: flex;
       flex-wrap: wrap;
-    }
+      margin: -15px;
+    }  
 }
 
 .portfolio-section__wrapper {
@@ -84,16 +85,18 @@
 
   @media screen and (min-width:$tablet) {
     flex-basis: calc((100% - 60px) / 2);
-    &:nth-child(even) {
-      margin-left: 30px;
-    }
+    margin: 15px;
+    // &:nth-child(even) {
+    //   margin-left: 30px;
+    // }
   }
+   
   @media screen and (min-width:$desktop) {
     flex-basis: calc((100% - 90px) / 3);
-    &:nth-child(even) {
-        margin-left:0;
-      }
-    margin: 0 15px ;
+    // &:nth-child(even) {
+    //     margin-left:0;
+    //   }
+    // margin: 0 15px ;
   }
 
  
@@ -125,6 +128,9 @@
   @media screen and (min-width:$tablet) {
       width: 354px;
   }
+  @media screen and (min-width:$desktop) {
+      width: 370px;
+  }
 }
 
 .portfolio-section__description {
@@ -142,6 +148,12 @@
   line-height: 2;
   letter-spacing: 0.06em;
   color: map-get($colors,'black-color');
+    @media screen and (min-width:$tablet) {
+        font-size: 16px;
+      }
+    @media screen and (min-width:$desktop) {
+        font-size: 18px;
+      }
 }
 
 .portfolio-section__project {

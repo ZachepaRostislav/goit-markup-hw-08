@@ -1,14 +1,14 @@
 .page-header--after {
-    content: "";
-    display: block;
-    border-bottom: 1px solid #ececec;
+  content: "";
+  display: block;
+  border-bottom: 1px solid #ececec;
 }
 
 .portfolio-section {
   @extend %section;
-  @media screen and (min-width:$desktop) {
-      padding: 94px 0;
-    }
+  @media screen and (min-width: $desktop) {
+    padding: 94px 0;
+  }
 }
 
 .portfolio-section__title {
@@ -16,23 +16,23 @@
 }
 
 .portfolio-section__buttonsList {
-    @include centeredFlex($jc:flex-start);
-    flex-wrap: wrap;   
-    margin-bottom: 40px;
-    @media screen and (min-width:$tablet) {
-      flex-wrap: nowrap;
-      margin-bottom: 30px;
-      @include centeredFlex();
-      }
+  @include centeredFlex($jc: flex-start);
+  flex-wrap: wrap;
+  margin-bottom: 40px;
+  @media screen and (min-width: $tablet) {
+    flex-wrap: nowrap;
+    margin-bottom: 30px;
+    @include centeredFlex();
+  }
 }
 
 .portfolio-section__item {
   margin: 0 8px 15px;
 
-  @media screen and (min-width:$tablet) {
+  @media screen and (min-width: $tablet) {
     &:not(:first-child) {
-        margin-left: 8px;
-      }
+      margin-left: 8px;
+    }
   }
 }
 
@@ -44,54 +44,52 @@
   line-height: 1.62;
   text-align: center;
   letter-spacing: 0.03em;
-  color: map-get($colors,'black-color');
+  color: map-get($colors, "black-color");
   background-color: #f5f4fa;
   border-radius: 4px;
   border-color: transparent;
   cursor: pointer;
-  transition: background-color 250ms $time-function,
-    color 250ms $time-function, box-shadow 250ms $time-function;
+  transition: background-color 250ms $time-function, color 250ms $time-function,
+    box-shadow 250ms $time-function;
 
-    &:hover,
-    &:focus {
-      background-color: map-get($colors, 'accent-color');
-        color: map-get($colors,'white-text-color');
-        box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
-          0px 2px 2px rgba(0, 0, 0, 0.12);
-    }
+  &:hover,
+  &:focus {
+    background-color: map-get($colors, "accent-color");
+    color: map-get($colors, "white-text-color");
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+      0px 2px 2px rgba(0, 0, 0, 0.12);
+  }
 }
 
 /*---------------portfolio-images---------------*/
 
 .portfolio-section__imagesList {
-  
-  @media screen and (min-width:$tablet) {
-      display: flex;
-      flex-wrap: wrap;
-      margin: -15px;
-    }  
+  @media screen and (min-width: $tablet) {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -15px;
+  }
 }
 
 .portfolio-section__wrapper {
-  
   margin: 0 0 30px;
   transition: box-shadow 250ms $time-function;
   cursor: pointer;
   &:hover,
   &:focus {
-      box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
-        1px 4px 6px rgba(0, 0, 0, 0.16);
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+      1px 4px 6px rgba(0, 0, 0, 0.16);
   }
 
-  @media screen and (min-width:$tablet) {
+  @media screen and (min-width: $tablet) {
     flex-basis: calc((100% - 60px) / 2);
     margin: 15px;
     // &:nth-child(even) {
     //   margin-left: 30px;
     // }
   }
-   
-  @media screen and (min-width:$desktop) {
+
+  @media screen and (min-width: $desktop) {
     flex-basis: calc((100% - 90px) / 3);
     // &:nth-child(even) {
     //     margin-left:0;
@@ -99,37 +97,33 @@
     // margin: 0 15px ;
   }
 
- 
-  // &:nth-child(3n+2) {  
+  // &:nth-child(3n+2) {
   //   // margin:0 30px 30px;
   //   @media screen and (min-width:$desktop) {
   //     margin: 0 30px ;
-  //   }  
+  //   }
   // }
- 
 }
-
-
 
 .portfolio-section__link {
   position: relative;
   overflow: hidden;
   &:hover .portfolio-section__overlay,
-  &:focus .portfolio-section__overlay{
+  &:focus .portfolio-section__overlay {
     opacity: 1;
-      transform: translateY(0);
+    transform: translateY(0);
   }
 }
 
-.portfolio-section__image { 
+.portfolio-section__image {
   width: 450px;
   @extend %img;
 
-  @media screen and (min-width:$tablet) {
-      width: 354px;
+  @media screen and (min-width: $tablet) {
+    width: 354px;
   }
-  @media screen and (min-width:$desktop) {
-      width: 370px;
+  @media screen and (min-width: $desktop) {
+    width: 370px;
   }
 }
 
@@ -140,20 +134,20 @@
   border-bottom: 1px solid #eeeeee;
 }
 
-.portfolio-section__name{
+.portfolio-section__name {
   margin-bottom: 4px;
   font-family: inherit;
   font-weight: $font-weight-bold;
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
-  color: map-get($colors,'black-color');
-    @media screen and (min-width:$tablet) {
-        font-size: 16px;
-      }
-    @media screen and (min-width:$desktop) {
-        font-size: 18px;
-      }
+  color: map-get($colors, "black-color");
+  @media screen and (min-width: $tablet) {
+    font-size: 16px;
+  }
+  @media screen and (min-width: $desktop) {
+    font-size: 18px;
+  }
 }
 
 .portfolio-section__project {
@@ -161,7 +155,7 @@
   font-size: 16px;
   line-height: 1.88;
   letter-spacing: 0.03em;
-  color: map-get($colors,'main-color');
+  color: map-get($colors, "main-color");
 }
 
 .portfolio-section__overlay {
@@ -174,8 +168,7 @@
   opacity: 0;
   background-color: rgba(33, 150, 243, 0.9);
   transform: translateY(100%);
-  transition: transform 250ms $time-function,
-    opacity 250ms $time-function;
+  transition: transform 250ms $time-function, opacity 250ms $time-function;
 }
 
 .portfolio-section__text {
@@ -183,5 +176,5 @@
   font-size: 18px;
   line-height: 1.56;
   letter-spacing: 0.03em;
-  color:  map-get($colors,'white-text-color');
+  color: map-get($colors, "white-text-color");
 }

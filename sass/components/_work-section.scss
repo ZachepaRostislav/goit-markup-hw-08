@@ -1,11 +1,11 @@
 .work-section {
   @extend %section;
-  @media screen and (min-width:$mobile) and (min-width:$mobile){
-      display: none;
+  @media screen and (min-width: $mobile) and (min-width: $mobile) {
+    display: none;
   }
-  @media screen and (min-width:$desktop){
-      display: block;
-      padding: 94px 0;
+  @media screen and (min-width: $desktop) {
+    display: block;
+    padding: 94px 0;
   }
 }
 
@@ -45,10 +45,10 @@
 }
 
 .work-section__text {
-    font-weight: $font-weight-bold;
-      font-size: 14px;
-      line-height: 1.14;
-      letter-spacing: 0.03em;
-      text-transform: uppercase;
-      color: map-get($colors,'white-text-color') ;
+  font-weight: $font-weight-bold;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: map-get($colors, "white-text-color");
 }

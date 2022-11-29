@@ -1,8 +1,8 @@
 .customers-section {
   @extend %section;
-  @media screen and (min-width:$desktop) {
-      padding: 94px 0;
-    }
+  @media screen and (min-width: $desktop) {
+    padding: 94px 0;
+  }
 }
 
 .customers-section__title {
@@ -11,63 +11,59 @@
 }
 
 .customers-section__list {
-  display: flex;  
+  display: flex;
   flex-wrap: wrap;
-  @media screen and (min-width:$desktop) {
-      flex-wrap: nowrap;
-    }
+  @media screen and (min-width: $desktop) {
+    flex-wrap: nowrap;
+  }
 }
 
 .customers-section__item {
   width: 210px;
   height: 92px;
-  
+
   flex-basis: calc((100% - 60px) / 2);
-  margin:15px;
-  @media screen and (min-width:$tablet) {
-    flex-basis: calc((100% - 90px) / 3);      
+  margin: 15px;
+  @media screen and (min-width: $tablet) {
+    flex-basis: calc((100% - 90px) / 3);
   }
-  @media screen and (min-width:$desktop) {
+  @media screen and (min-width: $desktop) {
     flex-basis: calc((100% - 180px) / 5);
     margin: 0 15px;
-      &:first-child {
-        margin-left: 0;
-      }
-      &:last-child {
-        margin-right: 0;
-      }
+    &:first-child {
+      margin-left: 0;
+    }
+    &:last-child {
+      margin-right: 0;
+    }
   }
 }
 
 .customers-section__link {
-    display: flex;        
-    padding: 15px 43px;
-    border: 1px solid map-get($colors, 'bg-color-social-icon' );
-    border-radius: 4px;
-    transition: border-color 250ms $time-function;
+  display: flex;
+  padding: 15px 43px;
+  border: 1px solid map-get($colors, "bg-color-social-icon");
+  border-radius: 4px;
+  transition: border-color 250ms $time-function;
   &:hover,
-  &:focus {    
-        border-color: map-get($colors,'accent-color');
-       
+  &:focus {
+    border-color: map-get($colors, "accent-color");
   }
 
-    @media screen and (min-width:$desktop) {
-      padding: 14px 31px;
-    }
-        
+  @media screen and (min-width: $desktop) {
+    padding: 14px 31px;
+  }
 }
 
 .customers-section__icon {
-    width: 106px;
-    height: 60px;
-    fill: map-get($colors,'bg-color-social-icon');
-    transition: fill 250ms $time-function;
+  width: 106px;
+  height: 60px;
+  fill: map-get($colors, "bg-color-social-icon");
+  transition: fill 250ms $time-function;
   .customers-section__link:hover & {
-      fill: map-get($colors, 'accent-color');
-    }
-  .customers-section__link:focus & {
-    fill: map-get($colors, 'accent-color');
+    fill: map-get($colors, "accent-color");
   }
-    
-
+  .customers-section__link:focus & {
+    fill: map-get($colors, "accent-color");
+  }
 }

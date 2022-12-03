@@ -2,10 +2,6 @@
   background-color: #f5f4fa;
   text-align: center;
   @extend %section;
-
-  @media screen and (min-width: $desktop) {
-    padding: 94px 0;
-  }
 }
 
 .team-section__title {

@@ -16,6 +16,9 @@
 
 %section {
   padding: 60px 0;
+  @media screen and (min-width: $desktop) {
+    padding: 94px 0;
+  }
 }
 
 %base-link {
@@ -31,7 +34,7 @@
 }
 
 %mobile-link {
-  display: inline-flex;
+  display: block;
   text-decoration: none;
   font-weight: 500;
   line-height: 1.17;

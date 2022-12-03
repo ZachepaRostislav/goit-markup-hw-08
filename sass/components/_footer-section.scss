@@ -2,10 +2,6 @@
   background-color: #2f303a;
   @extend %section;
   text-align: center;
-
-  @media screen and (min-width: $desktop) {
-    padding: 94px 0;
-  }
 }
 
 .footer-section__container {

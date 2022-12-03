@@ -32,6 +32,10 @@ body {
   color: map-get($colors, "main-color");
 }
 
+body.modal-open {
+  overflow: hidden;
+}
+
 img {
   display: block;
   max-width: 100%;

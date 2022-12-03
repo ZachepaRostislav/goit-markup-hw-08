@@ -1,11 +1,9 @@
 .work-section {
   @extend %section;
-  @media screen and (min-width: $mobile) and (min-width: $mobile) {
-    display: none;
-  }
+  display: none;
+
   @media screen and (min-width: $desktop) {
     display: block;
-    padding: 94px 0;
   }
 }
 

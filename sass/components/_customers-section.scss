@@ -1,8 +1,5 @@
 .customers-section {
   @extend %section;
-  @media screen and (min-width: $desktop) {
-    padding: 94px 0;
-  }
 }
 
 .customers-section__title {

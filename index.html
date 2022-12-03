@@ -193,9 +193,14 @@
             <li class="work-section__item">
               <div class="work-section__thumb">
                 <img
-                  src="./images/softengineer.jpg"
+                  srcset="
+                    ./images/work/box_1@1x.jpg 1x,
+                    ./images/work/box_1@2x.jpg 2x
+                  "
+                  src="./images/work/box_1@1x.jpg"
                   alt="softengineer"
                   width="370"
+                  height="294"
                   class="work-section__img"
                 />
                 <div class="work-section__overlay">
@@ -206,9 +211,14 @@
             <li class="work-section__item">
               <div class="work-section__thumb">
                 <img
-                  src="./images/mobiledev.jpg"
+                  srcset="
+                    ./images/work/box_2@1x.jpg 1x,
+                    ./images/work/box_2@2x.jpg 2x
+                  "
+                  src="./images/work/box_2@1x.jpg"
                   alt="mobiledev"
                   width="370"
+                  height="294"
                   class="work-section__img"
                 />
                 <div class="work-section__overlay">
@@ -219,9 +229,14 @@
             <li class="work-section__item">
               <div class="work-section__thumb">
                 <img
-                  src="./images/gamedev.jpg"
+                  srcset="
+                    ./images/work/box_3@1x.jpg 1x,
+                    ./images/work/box_3@2x.jpg 2x
+                  "
+                  src="./images/work/box_3@1x.jpg"
                   alt="gamedev"
                   width="370"
+                  height="294"
                   class="work-section__img"
                 />
                 <div class="work-section__overlay">
@@ -237,12 +252,64 @@
           <h2 class="team-section__title">Наша команда</h2>
           <ul class="team-section__list list">
             <li class="team-section__item">
-              <img
-                src="./images/igor.jpg"
-                alt="igor"
-                width="270"
-                class="team-section__img"
-              />
+              <picture>
+                <source
+                  media="(min-width:1200px )"
+                  srcset="
+                    ./images/team/lg-igor@1x.webp 1x,
+                    ./images/team/lg-igor@2x.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <source
+                  media="(min-width:1200px )"
+                  srcset="
+                    ./images/team/lg-igor@1x.jpg 1x,
+                    ./images/team/lg-igor@2x.jpg 2x
+                  "
+                  type="image/jpg"
+                />
+                <source
+                  media="(min-width:768px )"
+                  srcset="
+                    ./images/team/md-igor@1x.webp 1x,
+                    ./images/team/md-igor@2x.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <source
+                  media="(min-width:768px )"
+                  srcset="
+                    ./images/team/md-igor@1x.jpg 1x,
+                    ./images/team/md-igor@2x.jpg 2x
+                  "
+                  type="image/jpg"
+                />
+                <source
+                  media="(max-width:767px )"
+                  srcset="
+                    ./images/team/sm-igor@1x.webp 1x,
+                    ./images/team/sm-igor@2x.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <source
+                  media="(max-width:767px )"
+                  srcset="
+                    ./images/team/sm-igor@1x.jpg 1x,
+                    ./images/team/sm-igor@2x.jpg 2x
+                  "
+                  type="image/jpg"
+                />
+                <img
+                  src="./images/team/sm-igor@1x.jpg"
+                  alt="igor"
+                  width="450"
+                  height="460"
+                  loading="lazy"
+                />
+              </picture>
+
               <h3 class="team-section__caption">Ігор Дем'яненко</h3>
               <p class="team-section__position">Product Designer</p>
               <ul class="team-section__block">
@@ -277,7 +344,63 @@
               </ul>
             </li>
             <li class="team-section__item">
-              <img src="./images/olga.jpg" alt="olga" width="270" />
+              <picture>
+                <source
+                  media="(min-width:1200px )"
+                  srcset="
+                    ./images/team/lg-olga@1x.webp 1x,
+                    ./images/team/lg-olga@2x.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <source
+                  media="(min-width:1200px )"
+                  srcset="
+                    ./images/team/lg-olga@1x.jpg 1x,
+                    ./images/team/lg-olga@2x.jpg 2x
+                  "
+                  type="image/jpg"
+                />
+                <source
+                  media="(min-width:768px )"
+                  srcset="
+                    ./images/team/md-olga@1x.webp 1x,
+                    ./images/team/md-olga@2x.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <source
+                  media="(min-width:768px )"
+                  srcset="
+                    ./images/team/md-olga@1x.jpg 1x,
+                    ./images/team/md-olga@2x.jpg 2x
+                  "
+                  type="image/jpg"
+                />
+                <source
+                  media="(max-width:767px )"
+                  srcset="
+                    ./images/team/sm-olga@1x.webp 1x,
+                    ./images/team/sm-olga@2x.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <source
+                  media="(max-width:767px )"
+                  srcset="
+                    ./images/team/sm-olga@1x.jpg 1x,
+                    ./images/team/sm-olga@2x.jpg 2x
+                  "
+                  type="image/jpg"
+                />
+                <img
+                  src="./images/team/sm-olga@1x.jpg"
+                  width="450"
+                  height="460"
+                  alt="olga"
+                  loading="lazy"
+                />
+              </picture>
               <h3 class="team-section__caption">Ольга Рєпіна</h3>
               <p class="team-section__position">Frontend Developer</p>
               <ul class="team-section__block">
@@ -312,7 +435,64 @@
               </ul>
             </li>
             <li class="team-section__item">
-              <img src="./images/mukola.jpg" alt="mukola" width="270" />
+              <picture>
+                <source
+                  media="(min-width:1200px )"
+                  srcset="
+                    ./images/team/lg-mukola@1x.webp 1x,
+                    ./images/team/lg-mukola@2x.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <source
+                  media="(min-width:1200px )"
+                  srcset="
+                    ./images/team/lg-mukola@1x.jpg 1x,
+                    ./images/team/lg-mukola@2x.jpg 2x
+                  "
+                  type="image/jpg"
+                />
+                <source
+                  media="(min-width:768px )"
+                  srcset="
+                    ./images/team/md-mukola@1x.webp 1x,
+                    ./images/team/md-mukola@2x.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <source
+                  media="(min-width:768px )"
+                  srcset="
+                    ./images/team/md-mukola@1x.jpg 1x,
+                    ./images/team/md-mukola@2x.jpg 2x
+                  "
+                  type="image/jpg"
+                />
+                <source
+                  media="(max-width:767px )"
+                  srcset="
+                    ./images/team/sm-mukola@1x.webp 1x,
+                    ./images/team/sm-mukola@2x.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <source
+                  media="(max-width:767px )"
+                  srcset="
+                    ./images/team/sm-mukola@1x.jpg 1x,
+                    ./images/team/sm-mukola@2x.jpg 2x
+                  "
+                  type="image/jpg"
+                />
+                <img
+                  src="./images/team/sm-mukola@1x.jpg"
+                  width="450"
+                  height="460"
+                  alt="mukola"
+                  loading="lazy"
+                />
+              </picture>
+
               <h3 class="team-section__caption">Микола Тарасов</h3>
               <p class="team-section__position">Marketing</p>
               <ul class="team-section__block">
@@ -347,7 +527,64 @@
               </ul>
             </li>
             <li class="team-section__item">
-              <img src="./images/muhailo.jpg" alt="muhailo" width="270" />
+              <picture>
+                <source
+                  media="(min-width:1200px )"
+                  srcset="
+                    ./images/team/lg-muhailo@1x.webp 1x,
+                    ./images/team/lg-muhailo@2x.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <source
+                  media="(min-width:1200px )"
+                  srcset="
+                    ./images/team/lg-muhailo@1x.jpg 1x,
+                    ./images/team/lg-muhailo@2x.jpg 2x
+                  "
+                  type="image/jpg"
+                />
+                <source
+                  media="(min-width:768px )"
+                  srcset="
+                    ./images/team/md-muhailo@1x.webp 1x,
+                    ./images/team/md-muhailo@2x.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <source
+                  media="(min-width:768px )"
+                  srcset="
+                    ./images/team/md-muhailo@1x.jpg 1x,
+                    ./images/team/md-muhailo@2x.jpg 2x
+                  "
+                  type="image/jpg"
+                />
+                <source
+                  media="(max-width:767px )"
+                  srcset="
+                    ./images/team/sm-muhailo@1x.webp 1x,
+                    ./images/team/sm-muhailo@2x.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <source
+                  media="(max-width:767px )"
+                  srcset="
+                    ./images/team/sm-muhailo@1x.jpg 1x,
+                    ./images/team/sm-muhailo@2x.jpg 2x
+                  "
+                  type="image/jpg"
+                />
+                <img
+                  src="./images/team/sm-muhailo@1x.jpg"
+                  width="450"
+                  height="460"
+                  alt="muhailo"
+                  loading="lazy"
+                />
+              </picture>
+
               <h3 class="team-section__caption">Михайло Єрмаков</h3>
               <p class="team-section__position">UI Designer</p>
               <ul class="team-section__block">

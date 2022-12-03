@@ -76,15 +76,9 @@
   }
   @media screen and (min-width: $tablet) {
     @include startFlex();
-    // display: flex;
-    // flex-direction: column;
-    // align-items:flex-start;
   }
   @media screen and (min-width: $desktop) {
-    @include startFlex($direction: row, $ai: baseline) // display: flex;
-      // flex-direction: row;
-      // align-items:flex-start; ;
-;
+    @include startFlex($direction: row, $ai: baseline);
   }
 }
 

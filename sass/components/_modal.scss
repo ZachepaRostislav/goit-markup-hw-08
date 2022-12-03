@@ -182,14 +182,7 @@
   border-radius: 4px;
   margin-right: 8px;
   transition: background-image 250ms $time-function,
-    border-color 250ms $time-function, background-color 250ms $time-function;
-
-  // .modal__label:focus & {
-  //     border-color: map-get($colors, 'accent-color');
-  // }
-  // .modal__label:hover & {
-  //   border-color: map-get($colors, 'accent-color')
-  // }
+    border-color 250ms $time-function, background-color 250ms $time-function; 
 }
 
 .modal__agreementText {

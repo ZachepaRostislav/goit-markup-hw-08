@@ -81,25 +81,11 @@
   @media screen and (min-width: $tablet) {
     flex-basis: calc((100% - 60px) / 2);
     margin: 15px;
-    // &:nth-child(even) {
-    //   margin-left: 30px;
-    // }
   }
 
   @media screen and (min-width: $desktop) {
     flex-basis: calc((100% - 90px) / 3);
-    // &:nth-child(even) {
-    //     margin-left:0;
-    //   }
-    // margin: 0 15px ;
   }
-
-  // &:nth-child(3n+2) {
-  //   // margin:0 30px 30px;
-  //   @media screen and (min-width:$desktop) {
-  //     margin: 0 30px ;
-  //   }
-  // }
 }
 
 .portfolio-section__link {
@@ -113,11 +99,11 @@
 }
 
 .portfolio-section__image {
-  width: 450px;
   @extend %img;
 
   @media screen and (min-width: $tablet) {
     width: 354px;
+    height: 294px;
   }
   @media screen and (min-width: $desktop) {
     width: 370px;
@@ -157,8 +143,9 @@
 
 .portfolio-section__overlay {
   position: absolute;
-  width: 370px;
+  width: 100%;
   height: 294px;
+
   padding: 24px 63px;
   top: 0;
   left: 0;
